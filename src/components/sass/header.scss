@@ -1,0 +1,41 @@
+header {
+  height: 120px;
+  width: 100%;
+  background-color: #264653;
+  .menu {
+    padding: 2px;
+    color: #f8961e;
+    text-decoration: none;
+    font-size: 28px;
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      border: 1px solid cyan;
+      margin: 1px;
+    }
+    .menu_nav {
+      display: flex;
+      margin: 1px;
+      padding: 1px;
+      justify-content: space-around;
+      border: 1px solid yellow;
+      a {
+        font-size: 20px;
+        color: #90be6d;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  header {
+    display: block;
+    overflow: hidden;
+    .menu_nav {
+      font-size: 10px;
+      display: block;
+    }
+  }
+}
