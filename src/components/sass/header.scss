@@ -1,5 +1,5 @@
 header {
-  height: 120px;
+  height: 128px;
   width: 100%;
   background-color: #264653;
   .menu {
@@ -23,19 +23,39 @@ header {
       border: 1px solid yellow;
       a {
         font-size: 20px;
-        color: #90be6d;
+        color: #F9C74F;
       }
     }
   }
 }
 
-@media screen and (max-width: 960px) {
-  header {
-    display: block;
-    overflow: hidden;
-    .menu_nav {
-      font-size: 10px;
-      display: block;
-    }
-  }
+.btn {
+  width: 150px;
+  height: 25px;
+  background-color: #000;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: #3498db;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #277da1 inset, 0 0 0 0 #277da1;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
+.btn:hover {
+  box-shadow: 0 0 10px 0 #F3722C inset, 0 0 10px 4px #F3722C;
+}
+
+
+//@media screen and (max-width: 960px) {
+//  header {
+//    display: block;
+//    overflow: hidden;
+//    .menu_nav {
+//      font-size: 10px;
+//      display: block;
+//    }
+//  }
+//}
+

@@ -20,12 +20,12 @@ const Header = () => {
                     </div>
                     <div className="nav">
                         <div className="menu_nav">
-                            <NavLink to="/Summary"><FontAwesomeIcon icon={faStrava} /> Summary</NavLink>
-                            <NavLink to="/Distance"><FontAwesomeIcon icon={faRoute} /> Distance</NavLink>
-                            <NavLink to="/Calories"><FontAwesomeIcon icon={faPizzaSlice} /> Calories</NavLink>
-                            <NavLink to="/Speed"><FontAwesomeIcon icon={faTachometerAlt} /> Speed</NavLink>
-                            <NavLink to="/Elevation"><FontAwesomeIcon icon={faMountain} /> Elevation</NavLink>
-                            <NavLink to="/Map"><FontAwesomeIcon icon={faGlobeEurope} /> Map</NavLink>
+                            <NavLink className="btn" to="/Summary"><FontAwesomeIcon icon={faStrava} /> Summary</NavLink>
+                            <NavLink className="btn" to="/Distance"><FontAwesomeIcon icon={faRoute} /> Distance</NavLink>
+                            <NavLink className="btn" to="/Calories"><FontAwesomeIcon icon={faPizzaSlice} /> Calories</NavLink>
+                            <NavLink className="btn" to="/Speed"><FontAwesomeIcon icon={faTachometerAlt} /> Speed</NavLink>
+                            <NavLink className="btn" to="/Elevation"><FontAwesomeIcon icon={faMountain} /> Elevation</NavLink>
+                            <NavLink className="btn" to="/Map"><FontAwesomeIcon icon={faGlobeEurope} /> Map</NavLink>
                         </div>
                     </div>
                 </div>

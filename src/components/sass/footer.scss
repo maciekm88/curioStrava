@@ -15,6 +15,15 @@ footer {
     margin: 20px;
     padding: 15px;
     font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .aboutme {
+      width:500px;
+    }
+    .powered {
+      width: 300px;
+    }
   }
   .contact_icons {
     width: 30%;
@@ -29,3 +38,5 @@ footer {
     }
   }
 }
+
+

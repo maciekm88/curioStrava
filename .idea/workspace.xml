@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e6a5c90-8360-466e-9175-74190eb1fd30" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/sass/App.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sass/colors.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sass/footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sass/general.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sass/header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sass/reset.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/common/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/common/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Summary.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Summary.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sass/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sass/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sass/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sass/header.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +32,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/powered by Strava" />
+      <recent name="$PROJECT_DIR$/src/images" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -48,7 +47,8 @@
       <option name="presentableId" value="Default" />
       <updated>1637791272568</updated>
       <workItem from="1637791286038" duration="631000" />
-      <workItem from="1637851144565" duration="15342000" />
+      <workItem from="1637851144565" duration="16880000" />
+      <workItem from="1637926169981" duration="8953000" />
     </task>
     <servers />
   </component>
@@ -65,5 +65,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
