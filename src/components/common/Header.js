@@ -9,6 +9,8 @@ import { faMountain } from "@fortawesome/free-solid-svg-icons/faMountain";
 import { faGlobeEurope } from "@fortawesome/free-solid-svg-icons/faGlobeEurope";
 import "../sass/App.scss";
 import "animate.css";
+import curiostatsSmallLogo from "../../images/curiostats64.png";
+
 
 const Header = () => {
     return (
@@ -16,7 +18,7 @@ const Header = () => {
             <div className="menu">
                 <div className="menu_content">
                     <div className="logo">
-                        <h1 id="title">your statistical curiosities from Strava!</h1>
+                        <h1 id="title"><img src={curiostatsSmallLogo} alt="turkub flaticon" />curiostats. your statistical curiosities from Strava!</h1>
                     </div>
                     <div className="nav">
                         <div className="menu_nav">

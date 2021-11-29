@@ -1,5 +1,4 @@
 header {
-  height: 128px;
   width: 100%;
   background-color: #264653;
   .menu {
@@ -11,8 +10,9 @@ header {
     .logo {
       display: flex;
       justify-content: center;
+      align-items: center;
       padding: 10px;
-      border: 1px solid cyan;
+      //border: 1px solid cyan;
       margin: 1px;
     }
     .menu_nav {
@@ -20,7 +20,7 @@ header {
       margin: 1px;
       padding: 1px;
       justify-content: space-around;
-      border: 1px solid yellow;
+      //border: 1px solid yellow;
       a {
         font-size: 20px;
         color: #F9C74F;
@@ -44,7 +44,7 @@ header {
   transition: all 150ms ease-in-out;
 }
 .btn:hover {
-  box-shadow: 0 0 10px 0 #F3722C inset, 0 0 10px 4px #F3722C;
+  box-shadow: 0 0 10px 0 lime inset, 0 0 10px 4px #F3722C;
 }
 
 
