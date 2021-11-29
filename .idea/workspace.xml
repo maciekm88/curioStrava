@@ -2,30 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e6a5c90-8360-466e-9175-74190eb1fd30" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/curiostats.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/curiostats128.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/curiostats512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/process.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sass/home.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/curiostats256.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/curiostats32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/curiostats64.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Calories.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Calories.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Distance.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Distance.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Elevation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Elevation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Speed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Speed.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/Summary.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Summary.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sass/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sass/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sass/colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sass/colors.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sass/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sass/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sass/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sass/header.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +55,7 @@
       <workItem from="1638136855956" duration="599000" />
       <workItem from="1638181007772" duration="1815000" />
       <workItem from="1638186340784" duration="8087000" />
-      <workItem from="1638202747829" duration="4575000" />
+      <workItem from="1638202747829" duration="5612000" />
     </task>
     <servers />
   </component>
