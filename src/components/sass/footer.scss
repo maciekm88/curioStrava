@@ -20,6 +20,8 @@ footer {
     align-items: center;
     .aboutme {
       width:500px;
+      display: flex;
+      flex-direction: column;
       .turkub {
         font-size: 10px;
         text-decoration: none;

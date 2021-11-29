@@ -13,7 +13,7 @@ const Footer = () => {
                 <a href="https://www.linkedin.com/in/maciej-matraszek/"><FontAwesomeIcon icon={faLinkedin} /> Linkedin</a>
             </div>
             <div className="about">
-                <p className="aboutme">Simple footer. <div className="turkub">Icons made by <a href="https://www.flaticon.com/authors/turkkub" title="turkkub">turkkub</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></p>
+                <p className="aboutme">Simple footer. <span className="turkub">Icons made by <a href="https://www.flaticon.com/authors/turkkub" title="turkkub">turkkub</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></span></p>
                 <p className="powered"><a href="https://www.strava.com/"><Logo /></a></p>
             </div>
         </footer>

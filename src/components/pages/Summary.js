@@ -34,8 +34,8 @@ const Summary = ({ user, returnTokens }) => {
     return (
         <div className="summary_page">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                {/*console.log("Hi, {returnTokens.athlete.firstname}!");*/}
-                {/*console.log("{user.data.all_ride_totals.distance}");*/}
+            {/*console.log("Hi, {returnTokens.athlete.firstname}!");*/}
+            {/*console.log("{user.data.all_ride_totals.distance}");*/}
         </div>
     );
 };

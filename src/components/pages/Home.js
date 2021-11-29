@@ -1,7 +1,7 @@
 import React from 'react';
 import curiostatsLogo from "../../images/curiostats256.png";
 const redirectUrl = "http://localhost:3000/Summary";
-const scope = "read";
+// const scope = "read";
 
 
 
