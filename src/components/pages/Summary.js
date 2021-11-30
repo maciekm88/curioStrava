@@ -19,9 +19,9 @@ function reAuthorize(){
 
         body: JSON.stringify({
 
-            const clientId = "yourid";
-            const clientSecret = "yoursecret";
-            const refreshToken = "yourrefreshtoken";
+            client_id: 'yourid',
+            client_secret: 'yoursecret',
+            refresh_token: 'yourrefreshtoken,
             grant_type: 'refresh_token'
         })
     }).then(res => res.json())
