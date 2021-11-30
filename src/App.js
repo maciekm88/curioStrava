@@ -8,7 +8,10 @@ import Distance from "./components/pages/Distance";
 import Elevation from "./components/pages/Elevation";
 import Speed from "./components/pages/Speed";
 import Summary from "./components/pages/Summary";
-import  "./components/sass/App.scss"
+import Map from "./components/pages/Map";
+import  "./components/sass/App.scss";
+
+
 
 function App() {
   return (
@@ -21,6 +24,7 @@ function App() {
               <Route exact path="/Elevation" element={<Elevation />}/>
               <Route exact path="/Speed" element={<Speed />}/>
               <Route exact path="/Summary" element={<Summary />}/>
+              <Route exact path="/Map" element={<Map />}/>
             </Routes>
         <Footer />
       </BrowserRouter>
