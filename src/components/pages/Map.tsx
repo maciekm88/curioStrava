@@ -12,9 +12,9 @@ const Map = () => {
 
     const [activities, setActivities] = useState<Activity[]>([]);
 
-    const clientId = "yourid";
-    const clientSecret = "yoursecret";
-    const refreshToken = "yourtoken";
+    const clientId = "74820";
+    const clientSecret = "aa90f8bede45989f7229e964ca147e6bbaa76f4e";
+    const refreshToken = "32d3509503958f6fc781b5ec6ae171ef1435d938";
     const auth_link = "https://www.strava.com/oauth/token";
     const activities_link = `https://www.strava.com/api/v3/athlete/activities`;
 

@@ -1,0 +1,23 @@
+.summary_page {
+  width: 100vw;
+  height: 717px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: #f3722c;
+    margin-bottom: 20px;
+    font-size: 48px;
+  }
+  h2 {
+    color: #f8961e;
+    margin:25px;
+    font-size: 32px;
+  }
+  h4 {
+    color:#277da1;
+    font-size: 20px;
+    margin: 15px;
+  }
+}
