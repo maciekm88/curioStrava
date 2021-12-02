@@ -105,7 +105,7 @@ const Calories = () => {
             <h3>You burnt {calories[1]} pizza slices! Yummy!</h3>
             <h3>You burnt {calories[2]} hamburgers!</h3>
             <h3>You burnt {calories[3]} 500 ml bottles of beer!</h3>
-            <h3>You burnt {calories[3]} 330 ml cola cans!</h3>
+            <h3>You burnt {calories[4]} 330 ml cola cans!</h3>
         </div>
     );
 };
