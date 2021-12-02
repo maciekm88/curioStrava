@@ -58,7 +58,7 @@ const Summary = () => {
     return (
         <div className="summary_page">
             <h1>Hello {athlete[0]} {athlete[1]}!</h1>
-            {/*<h2><img src={athlete[2]} alt="profile picture"></img></h2>*/}
+            <h2><img src="{{athlete[2]}}" alt="profile avatar"/></h2>
             <h2>Are you curious about your sport stats?</h2>
             <h4>How many kilometers do you need to go around the world?</h4>
             <h4>or maybe you want to know </h4>

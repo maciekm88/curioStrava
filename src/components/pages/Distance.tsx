@@ -46,6 +46,9 @@ const Distance = () => {
             const equatorLength = 40178.017;
             const aroundTheWorld = Math.round(equatorLength - totalDistance);
             console.log("You still need " + aroundTheWorld + " kilometers to go around the world");
+            // const aroundTheWorldPercentage = (function atw_percentage(totalDistance, equatorLength) {
+            //     return (100 * totalDistance) / equatorLength;
+            // })
             const moonDistance = 384400;
             const toTheMoon = Math.round(moonDistance - totalDistance);
             console.log("You are still " + toTheMoon + " kilometers far from the moon :(")
@@ -74,7 +77,13 @@ const Distance = () => {
             <h2>Whoa! Your all time Strava distance is {distance[2]} kilometers! </h2>
             <h3>You rode {distance[0]} km and you ran {distance[1]} km. I think that's a great result!</h3>
             <h3>You still need {distance[3]} kilometers to go around the world...</h3>
-            <h3>and you're still {distance[4]} kilometers far from the moon :(</h3>
+            {/*<div className="progress" style="height:20px">*/}
+            {/*    <div className="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"*/}
+            {/*         aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style=" width : 37%">*/}
+            {/*        37%*/}
+            {/*    </div>*/}
+            {/*</div>*/}
+            <h3>and you're still {distance[4]} kilometers far from the moon</h3>
         </div>
     );
 };
