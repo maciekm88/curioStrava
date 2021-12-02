@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e6a5c90-8360-466e-9175-74190eb1fd30" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/sass/calories.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sass/elevation.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sass/speed.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Calories.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Calories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Distance.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Distance.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Elevation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Elevation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Elevation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Elevation.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/Summary.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Summary.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sass/distance.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sass/distance.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sass/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sass/App.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/sass/summary.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sass/summary.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +71,7 @@
       <workItem from="1638369523306" duration="19518000" />
       <workItem from="1638390082046" duration="680000" />
       <workItem from="1638393780419" duration="14322000" />
-      <workItem from="1638437549552" duration="11532000" />
+      <workItem from="1638437549552" duration="12547000" />
     </task>
     <servers />
   </component>

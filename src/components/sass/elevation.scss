@@ -1,4 +1,4 @@
-.summary_page {
+.elevation_page {
   width: 100vw;
   height: 717px;
   background-image: url("../../images/blackboard.jpg");
@@ -9,10 +9,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  h1 {
-    color: #f3722c;
-    margin-bottom: 20px;
-    font-size: 48px;
+  h2 {
+    font-family: 'Rock Salt', cursive;
+    color: #f94144;
+    font-size: 36px;
+
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid wheat; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
@@ -34,19 +35,29 @@
       50% { border-color: wheat; }
     }
   }
-  h2 {
-    color: #f8961e;
-    margin:25px;
-    font-size: 32px;
-    img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
+  h3 {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #f9844a;
+    font-size: 28px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid wheat; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation:
+            typing 3s steps(56, end),
+            blink-caret 1s step-end infinite;
+
+    /* The typing effect */
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
     }
-  }
-  h4 {
-    color:#277da1;
-    font-size: 20px;
-    margin: 15px;
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: wheat; }
+    }
   }
 }

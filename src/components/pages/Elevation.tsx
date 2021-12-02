@@ -88,11 +88,11 @@ const Elevation = () => {
 
     return (
         <div className="elevation_page">
-            <h2>Let's see how much you like climbing!</h2>
+            <h2>Let's see how much do you like climbing!</h2>
             <h3>Your total gained elevation is {elevation[0]} meters! Good work!</h3>
             <h3>Total elevation includes {elevation[1]} meters of cycling and {elevation[2]} meters of running!</h3>
             <h3>Looks like you're a pro cyclist! {elevation[3]} Stelvio climbs or {elevation[4]} Alpe d'Huez visits!</h3>
-            <h3>Oh, you're aslo a great runner! {elevation[5]} Mount Everest summits! Like a sherpa!</h3>
+            <h3>Oh, you're aslo a great runner! {elevation[5]} Mount Everest summits! Like a Sherpa!</h3>
             <h3>Totally {elevation[0]} meters! Bye bye Earth, you're in the thermosphere! :)</h3>
         </div>
     );

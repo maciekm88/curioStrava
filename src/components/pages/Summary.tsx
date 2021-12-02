@@ -1,14 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
-// declare var athleteResponse: any;
-
-
-
 
 const Summary = () => {
 
     interface Athlete {
-        //athleteResponse: any;
         athleteFirstname: string;
         athleteLastname: string;
         athleteProfilePicture: string;
@@ -20,7 +15,6 @@ const Summary = () => {
     const clientSecret = "aa90f8bede45989f7229e964ca147e6bbaa76f4e";
     const refreshToken = "32d3509503958f6fc781b5ec6ae171ef1435d938";
     const auth_link = "https://www.strava.com/oauth/token";
-
 
     useEffect(() => {
         async function fetchData() {
@@ -39,19 +33,15 @@ const Summary = () => {
             console.log(athleteLastname);
             const athleteProfilePicture = athleteResponse.data.profile;
             console.log(athleteProfilePicture);
-
             console.log(athleteResponse.data.firstname);
             console.log(athleteResponse.data.lastname);
             console.log(athleteResponse.data.profile);
 
             const athleteBio = [athleteFirstname, athleteLastname, athleteProfilePicture];
-
             console.log(athleteBio);
 
             setAthlete(athleteBio);
-
         }
-
         fetchData();
     }, []);
 
@@ -65,8 +55,6 @@ const Summary = () => {
             <h4>how many fast foods did you burnt during your trainings?</h4>
             <h4>What about being faster than a hare?</h4>
             <h4>or climbing Mount Everest?</h4>
-            <span>Background hoto by cottonbro from Pexels</span>
-
         </div>
     );
 };
