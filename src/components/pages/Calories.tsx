@@ -4,11 +4,14 @@ import axios from "axios";
 const Calories = () => {
 
     interface Cals {
-        activityKilojoules: number;
-        activityName: string;
+        totalKilojoulesToKcal: number;
+        pizzaSlices: number;
+        hamburgers: number;
+        beers: number;
+        colas: number;
     }
 
-    const [calories, setCalories] = useState<Cals[]>([]);
+    const [calories, setCalories] = useState<number[]>([]);
 
     const clientId = "74820";
     const clientSecret = "aa90f8bede45989f7229e964ca147e6bbaa76f4e";
@@ -37,15 +40,19 @@ const Calories = () => {
                 kilojoules.push([activity_kilojoules]);
             }
             console.log(kilojoules);
-            // for (let i = kilojoules.length; i >= 0; i--) {
-            //     if (typeof kilojoules[i] === undefined) {
-            //         kilojoules.splice(i, 1);
-            //     }
-            // }
-            kilojoules.splice(kilojoules.findIndex(i => typeof i === "undefined"));
 
-            console.log(kilojoules);
+            const kJs = kilojoules.flat();
+            console.log(kJs);
 
+            const kJoules = kJs.filter(function(el) {
+                return el !== undefined;
+            })
+            console.log(kJoules);
+
+            const sumOfKilojoules = Math.round(kJoules.reduce(function(total, item) {
+                return total + item;
+            }));
+            console.log(sumOfKilojoules);
 
                 //https://bicycles.stackexchange.com/questions/32026/what-is-energy-output-in-strava-application
                 // in a straight energy conversion there are about 4.185 joules per calorie,
@@ -57,25 +64,34 @@ const Calories = () => {
                 // Strava is assuming a value for GME of 21.4%,
                 // about the mid-point of that observed range of gross efficiency.
                 //
-            // const grossMetabolicEfficiency = 0.214
-            //
-            // const kilojoulesToKcal = Math.round(kilojoules / 4.185);
-            // console.log(kilojoulesToKcal);
 
+            const grossMetabolicEfficiency = 0.214
 
+            const kilojoulesConversion = Math.round(sumOfKilojoules / 4.185);
+            console.log(kilojoulesConversion);
 
+            const totalKilojoulesToKcal = Math.round(kilojoulesConversion / grossMetabolicEfficiency);
+            console.log(totalKilojoulesToKcal);
 
-            // const polylines = [];
-            // for (let i = 0; i < stravaActivityResponse.data.length; i += 1) {
-            //     const activity_polyline = stravaActivityResponse.data[i].map.summary_polyline;
-            //     const activity_name = stravaActivityResponse.data[i].name;
-            //     polylines.push({activityPositions: polyline.decode(activity_polyline), activityName: activity_name});
-            // }
-            // console.log(polylines);
+            const pizzaSliceKcal = 300;
+            const hamburgerKcal = 294;
+            const beer500Ml = 215;
+            const colaCan = 123;
 
-            // setActivities(polylines);
-            //
-            // setActivities(stravaActivityResponse.data[0].name);
+            const pizzaSlices = Math.round(totalKilojoulesToKcal / pizzaSliceKcal);
+            console.log(pizzaSlices)
+            const hamburgers = Math.round(totalKilojoulesToKcal / hamburgerKcal);
+            console.log(hamburgers)
+            const beers = Math.round(totalKilojoulesToKcal / beer500Ml);
+            console.log(beers)
+            const colas = Math.round(totalKilojoulesToKcal / colaCan);
+            console.log(colas)
+
+            const caloriesStats = [totalKilojoulesToKcal, pizzaSlices, hamburgers, beers, colas]
+            console.log(caloriesStats);
+
+            setCalories(caloriesStats);
+
         }
         fetchData();
     }, []);
@@ -84,7 +100,12 @@ const Calories = () => {
 
     return (
         <div className="calories_page">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, aspernatur dolorum eaque illum magni obcaecati sapiente ullam. Ab autem nam? liquid architecto consequatur consequuntur corporis cum debitis deleniti dolorum earum id maxime molestias, mollitia officia ratione recusandae rem vero, voluptate. Dolor ex odit quibusdam voluptate. Assumenda, consectetur deleniti dolorum est facere ipsa minima nostrum odit ratione, sapiente sit unde voluptates. Ad commodi dicta dolorum eum impedit, in necessitatibus nesciunt, qui suscipit ullam, voluptatum!
+            <h2>Are you a foodie?</h2>
+            <h3>You burnt {calories[0]} calories! Wow! Keep exercising!</h3>
+            <h3>You burnt {calories[1]} pizza slices! Yummy!</h3>
+            <h3>You burnt {calories[2]} hamburgers!</h3>
+            <h3>You burnt {calories[3]} 500 ml bottles of beer!</h3>
+            <h3>You burnt {calories[3]} 330 ml cola cans!</h3>
         </div>
     );
 };
