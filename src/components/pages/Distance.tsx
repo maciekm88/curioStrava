@@ -3,8 +3,8 @@ import axios from "axios";
 
 const Distance = () => {
 
-    interface Distance {
-        distanceResponse: number;
+    interface athleteDistance {
+        // athleteStatsResponse: any;
         totalRideDistance: number;
         totalRunDistance: number;
         totalDistance: number;
@@ -12,14 +12,14 @@ const Distance = () => {
         toTheMoon: number;
     }
 
-    const [distance, setDistance] = useState<Distance[]>([]);
+    const [distance, setDistance] = useState<number[]>([]);
 
     const clientId = "74820";
     const clientSecret = "aa90f8bede45989f7229e964ca147e6bbaa76f4e";
     const refreshToken = "32d3509503958f6fc781b5ec6ae171ef1435d938";
     const auth_link = "https://www.strava.com/oauth/token";
     const athlete_link = `https://www.strava.com/api/v3/athlete`;
-    const athleteStats_link = `https://www.strava.com/api/v3/athletes/{USER_ID}/stats`;
+    // const athleteStats_link = `https://www.strava.com/api/v3/athletes/{USER_ID}/stats`;
 
     useEffect(() => {
         async function fetchData() {
@@ -37,17 +37,17 @@ const Distance = () => {
             console.log(athleteStatsResponse.data);
             console.log(athleteStatsResponse.data.all_ride_totals.distance);
             console.log(athleteStatsResponse.data.all_run_totals.distance);
-            const totalRideDistance = (athleteStatsResponse.data.all_ride_totals.distance * 0.001);
+            const totalRideDistance = Math.round(athleteStatsResponse.data.all_ride_totals.distance * 0.001);
             console.log(totalRideDistance);
-            const totalRunDistance = (athleteStatsResponse.data.all_run_totals.distance * 0.001);
+            const totalRunDistance = Math.round(athleteStatsResponse.data.all_run_totals.distance * 0.001);
             console.log(totalRunDistance);
-            const totalDistance = (totalRideDistance + totalRunDistance);
+            const totalDistance = Math.round(totalRideDistance + totalRunDistance);
             console.log(totalDistance);
             const equatorLength = 40178.017;
-            const aroundTheWorld = (equatorLength - totalDistance);
+            const aroundTheWorld = Math.round(equatorLength - totalDistance);
             console.log("You still need " + aroundTheWorld + " kilometers to go around the world");
             const moonDistance = 384400;
-            const toTheMoon = (moonDistance - totalDistance);
+            const toTheMoon = Math.round(moonDistance - totalDistance);
             console.log("You are still " + toTheMoon + " kilometers far from the moon :(")
 
             //tablica składa się kolejno z:
@@ -57,11 +57,11 @@ const Distance = () => {
             // ile km pozostało do okrążenia ziemi
             // w jakiej odleglosci od ksiezyca jestesmy
 
-            const athleteDistance = [totalRideDistance, totalRunDistance, totalDistance, aroundTheWorld, toTheMoon];
+            const distanceStats = [totalRideDistance, totalRunDistance, totalDistance, aroundTheWorld, toTheMoon];
 
-            console.log(athleteDistance);
+            console.log(distanceStats);
 
-            setDistance(athleteDistance);
+            setDistance(distanceStats)
 
         }
 
@@ -71,7 +71,10 @@ const Distance = () => {
 
     return (
         <div className="distance_page">
-            Lorem ipsum dolor sit amet, qui suscipit ullam, voluptatum!
+            <h2>Whoa! Your all time Strava distance is {distance[2]} kilometers! </h2>
+            <h3>You rode {distance[0]} km and you ran {distance[1]} km. I think that's a great result!</h3>
+            <h3>You still need {distance[3]} kilometers to go around the world...</h3>
+            <h3>and you're still {distance[4]} kilometers far from the moon :(</h3>
         </div>
     );
 };

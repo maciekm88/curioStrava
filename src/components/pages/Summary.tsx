@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
-declare var athleteResponse: any;
+// declare var athleteResponse: any;
 
 
 
@@ -8,7 +8,7 @@ declare var athleteResponse: any;
 const Summary = () => {
 
     interface Athlete {
-        athleteResponse: any;
+        //athleteResponse: any;
         athleteFirstname: string;
         athleteLastname: string;
         athleteProfilePicture: string;
@@ -20,13 +20,15 @@ const Summary = () => {
     const clientSecret = "aa90f8bede45989f7229e964ca147e6bbaa76f4e";
     const refreshToken = "32d3509503958f6fc781b5ec6ae171ef1435d938";
     const auth_link = "https://www.strava.com/oauth/token";
-    const athlete_link = `https://www.strava.com/api/v3/athlete`;
+
 
     useEffect(() => {
         async function fetchData() {
             const stravaAuthResponse = await axios.all([
                 axios.post(`${auth_link}?client_id=${clientId}&client_secret=${clientSecret}&refresh_token=${refreshToken}&grant_type=refresh_token`)
             ]);
+
+            const athlete_link = `https://www.strava.com/api/v3/athlete`;
 
             const athleteResponse = await axios.get(`${athlete_link}?access_token=${stravaAuthResponse[0].data.access_token}`);
             console.log(athleteResponse);
@@ -63,6 +65,7 @@ const Summary = () => {
             <h4>how many fast foods did you burnt during your trainings?</h4>
             <h4>What about being faster than a hare?</h4>
             <h4>or climbing Mount Everest?</h4>
+            <span>Background hoto by cottonbro from Pexels</span>
 
         </div>
     );
